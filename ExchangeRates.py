@@ -46,7 +46,7 @@ exchange_rates = ExchangeRates("BankOfCanadaExchangeRate.2026.csv")
 amount = float(input("Enter the amount you want to convert: "))
 from_currency = input("Convert from USD or CAD? (Enter USD or CAD): ").upper()
 to_currency = input("Convert to USD or CAD? (Enter USD or CAD): ").upper()
-#Right here, I used input() to collect every amount and currency that the user types. The amount was converted into a float again and I generated some basic command statements with Gemini. Also, I ran it once using "usd" and "cad" naturally, and because it wasn't uppercase, it treated it as my "else" statement, so I fixed that using "upper()", taught from a friend.
+#Right here, I used input() to collect every amount and currency that the user types. The amount was converted into a float again and I came up with some basic command statements. Also, I ran it once using "usd" and "cad" naturally, and because it wasn't uppercase, it treated it as my "else" statement, so I fixed that using "upper()", taught from a friend.
 
 result = exchange_rates.convert(amount, from_currency, to_currency)
 
